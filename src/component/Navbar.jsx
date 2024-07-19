@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="flex h-10 justify-evenly items-center pt-10">
+    <nav className="flex justify-evenly items-center py-1 bg-black ">
       <img src={Nav} alt="navbar" />
 
       <ul className="flex gap-10">
@@ -15,7 +15,14 @@ const Navbar = () => {
         <li>FAQs</li>
       </ul>
 
-      <Button title="Book a class" classes={"bg-white"} />
+      <div className="shadow-half-screen">
+        <Button
+          title="Book a class"
+          classes={
+            "border border-1 border-[#6881FF] rounded-lg p-3 font-semibold "
+          }
+        />
+      </div>
     </nav>
   );
 };
