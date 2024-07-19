@@ -3,10 +3,10 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-evenly items-center py-1 bg-black ">
-      <img src={Nav} alt="navbar" />
+    <nav className="flex flex-col lg:flex-row lg:justify-evenly lg:items-center lg:py-1 lg: bg-black ">
+      <img src={Nav} alt="navbar" className="h-10 w-10"/>
 
-      <ul className="flex gap-10">
+      <ul className="flex gap-4 mx-2 lg:gap-10">
         <li>About</li>
         <li>Services</li>
         <li>Process</li>
